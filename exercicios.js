@@ -81,3 +81,61 @@ alert(`Valor do carro para o consumidor será de R$ ${valorCarro}`);
 
 */
 
+// Exercicio 5 - Desenvolva um algoritmo que faça o cálculo do índice de massa
+// corporal de uma pessoa.
+
+/*
+
+const infAltura = Number(prompt(`Informe sua altura 
+Exemplo: 1.70`))
+
+const infPeso = Number(prompt(`Informe seu peso 
+Exemplo: 80`))
+
+const calcImc = infPeso / (infAltura * infAltura)
+if (calcImc < 18.5) {
+    alert(`Voce está abaixo da faixa de peso ideal!`)
+} else if (calcImc > 24.99) {
+    alert(`Voce está acima da faixa de peso ideal!`)
+
+} else if (calcImc >= 18.5 && calcImc <= 24.99) {
+    alert(`Voce está dentro da faixa de peso ideal!`)
+
+} else {
+    alert(`Voce digitou algo errado ae filhão!`)
+
+}
+
+*/
+
+// Exercicio 6 - Escreva um algoritmo que solicite 2 números e uma operação
+// matemática.O algoritmo deve realizar o cálculo com os 2 números
+// digitados conforme a operação informada.
+
+
+const infNum1 = Number(prompt('Informe o primeiro número:'));
+const infNum2 = Number(prompt('Informe o segundo número:'));
+const infOpe = Number(prompt(`Informe a operação matemática:
+Digite "1" - Para somar;
+Digite "2" - Para subtrair;
+Digite "3" - Para multiplicar;
+Digite "4" - Para dividir; `));
+
+switch (infOpe) {
+    case 1:
+        alert(`${infNum1} + ${infNum2} = ${infNum1 + infNum2}`);
+        break;
+    case 2:
+        alert(`${infNum1} - ${infNum2} = ${infNum1 - infNum2}`);
+        break;
+    case 3:
+        alert(`${infNum1} * ${infNum2} = ${infNum1 * infNum2}`);
+        break;
+    case 4:
+        alert(`${infNum1} / ${infNum2} = ${infNum1 / infNum2}`);
+        break;
+    default:
+        alert(`Você digitou algo errado ae filhão!`)
+        break
+
+}
