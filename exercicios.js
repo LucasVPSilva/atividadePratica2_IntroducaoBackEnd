@@ -86,10 +86,10 @@ alert(`Valor do carro para o consumidor será de R$ ${valorCarro}`);
 
 /*
 
-const infAltura = Number(prompt(`Informe sua altura 
+const infAltura = Number(prompt(`Informe sua altura
 Exemplo: 1.70`))
 
-const infPeso = Number(prompt(`Informe seu peso 
+const infPeso = Number(prompt(`Informe seu peso
 Exemplo: 80`))
 
 const calcImc = infPeso / (infAltura * infAltura)
@@ -112,6 +112,7 @@ if (calcImc < 18.5) {
 // matemática.O algoritmo deve realizar o cálculo com os 2 números
 // digitados conforme a operação informada.
 
+/*
 
 const infNum1 = Number(prompt('Informe o primeiro número:'));
 const infNum2 = Number(prompt('Informe o segundo número:'));
@@ -138,4 +139,49 @@ switch (infOpe) {
         alert(`Você digitou algo errado ae filhão!`)
         break
 
+}
+
+*/
+
+// Exercicio 7 - Atividade Caixa Eletronico
+
+/*
+
+let saldoConta = 2000;
+const taxaSaque = 4.5;
+
+let saqueConta = Number(prompt('Informe o valor que deseja sacar:'))
+
+
+if (saqueConta < saldoConta - taxaSaque && saqueConta % 5 === 0) {
+    saldoConta = saqueConta - taxaSaque
+    alert(`Saque de R$ ${saqueConta} realizado com sucesso, seu saldo atual é de R$ ${saldoConta}`)
+} else if (saqueConta < saldoConta - taxaSaque && saqueConta % 5 !== 0) {
+    alert(`Não temos nota disponivel para esse saque. 
+Notas disponiveis: R$ 5,00 / R$ 10,00 / R$ 20,00 / R$ 50,00 / R$ 100,00 `)
+} else if (saqueConta > saldoConta - taxaSaque) {
+    alert(`Saque maior que saldo na conta!`)
+} else {
+    alert(`Você digitou algo errado ae filhão!`)
+}
+
+// if (saqueConta > saldoConta - taxaSaque) {
+//     alert(`Saque maior que saldo na conta!`)
+// } else if (saqueConta % 5 === 0) {
+//     alert(`Deu certo!`)
+// }
+
+*/
+
+
+// Exercicio 8  - Calculo multa
+
+const velocidadeCarro = Number(prompt(`Informe a velocidade do carro na BR-153`));
+const velocidadePermitida = 80;
+const valorMulta = 5;
+
+if (velocidadeCarro > velocidadePermitida) {
+    alert(`Você foi multado em R$ ${(velocidadeCarro - velocidadePermitida) * valorMulta},00`);
+} else {
+    alert('Fica sussa, você passou dentro da velocidade permitida e não será multado');
 }
